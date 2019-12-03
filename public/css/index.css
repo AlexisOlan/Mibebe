@@ -1,0 +1,97 @@
+@import url('./fonts.css');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: linear-gradient(-25deg, #E41445, #B2B2B2, #e41445)no-repeat!important;"
+}
+
+a, a:hover{
+	text-decoration: none;
+}
+
+.btn-sem{
+  border: none;
+  background: linear-gradient(-25deg, #AF3863, #ec407a );
+}
+
+.btn-sem:hover{
+  background: linear-gradient(-25deg, #ec407a, #AF3863);
+}
+
+ul{
+	list-style: none;
+}
+
+#nav-bar{
+	font-family: bahnschrift;
+}
+
+.footer{
+  color: #222;
+  font-family: bahnschrift;
+}
+
+.footer .info{
+  font-size: 13px;
+}
+
+.footer h5{
+  text-align: center;
+  font-weight: 600;
+}
+
+.social-buttons a{
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  color: #333;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 8px;
+}
+
+.social-buttons a::before{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg,#9D9D9D,#F73676)!important;
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover::before{
+  transform: scale(0);
+}
+
+.social-buttons a i{
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover i{
+  background: linear-gradient(45deg,#9D9D9D,#F73676);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}
+
+
+.footer-bottom{
+  font-family: bahnschrift;
+  font-size: 15px;
+  background: #EDE2D7;
+  color: #444;
+  height: 50px;
+  text-align: center;
+  padding-top: 13px;
+  border-radius: 10px;
+}

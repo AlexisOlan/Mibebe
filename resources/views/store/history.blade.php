@@ -13,7 +13,7 @@
         	{!! Form::open(['route' => 'pregnancy.store'])!!}
 					<div class="form-group">
 						<label for="week"><h4>Semana:</h4></label>
-						{!! Form::text(
+						{!! Form::number(
                             'week', 
                             null, 
                             array(

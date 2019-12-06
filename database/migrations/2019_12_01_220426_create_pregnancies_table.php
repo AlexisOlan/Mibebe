@@ -17,7 +17,7 @@ class CreatePregnanciesTable extends Migration
             $table->increments('id');
             $table->integer('week');
             $table->string('status');
-            $table->integer('pregnancy_id')->unsigned();
+            $table->integer('pregnancy_id')->unsigned()->nullable();
             $table->foreign('pregnancy_id')->references('id')->on('pregnancies')->onDelete('cascade');
             // $table->timestamps();
         });
